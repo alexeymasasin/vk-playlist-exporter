@@ -1,0 +1,23 @@
+{
+	"name": "VK Playlist Exporter",
+	"content_scripts": [
+		{
+			"js": ["./script.js"],
+			"matches": ["https://vk.com/*"]
+		}
+	],
+	"version": "1.0.0",
+	"description": "Удобный экспорт аудиозаписей из плейлиста VK. Автор: @alexeymasasin",
+	"manifest_version": 3,
+	"icons": {
+		"16": "./16.png",
+		"32": "./32.png",
+		"48": "./48.png",
+		"128": "/128.png"
+	},
+	"author": "Alexey Masasin",
+	"action": {
+		"default_popup": "index.html",
+		"default_title": "VK Playlist Exporter"
+	}
+}
